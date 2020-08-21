@@ -11,13 +11,19 @@
                             <h4>Login</h4>
                         </div>
                         <div class="card-body">
-                            <form  action="/dashboard" class="needs-validation" novalidate="">
+                            <form method="POST"  action="/auth/login" class="needs-validation" novalidate="">
+                                @csrf
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
+                                    <input id="email" type="email" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" tabindex="1" required autofocus>
                                     <div class="invalid-feedback">
                                         Please fill in your email
                                     </div>
+                                    @if ($errors->has('email'))
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                    @endif
                                 </div>
                                 <div class="form-group">
                                     <div class="d-block">
@@ -28,10 +34,15 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
+                                    <input id="password" type="password" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" name="password" tabindex="2" required>
                                     <div class="invalid-feedback">
                                         please fill in your password
                                     </div>
+                                    @if ($errors->has('password'))
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                    @endif
                                 </div>
                                 <div class="form-group">
                                     <div class="custom-control custom-checkbox">

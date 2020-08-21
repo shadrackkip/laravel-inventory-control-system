@@ -16,7 +16,8 @@
         "kalnoy/nestedset": "^5.0",
         "laravel/framework": "^7.24",
         "laravel/tinker": "^2.0",
-        "spatie/laravel-sluggable": "^2.5"
+        "spatie/laravel-sluggable": "^2.5",
+        "yoeunes/toastr": "^1.2"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
