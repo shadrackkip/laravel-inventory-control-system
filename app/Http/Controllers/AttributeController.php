@@ -37,6 +37,17 @@ class AttributeController extends Controller
      */
     public function store(Request $request)
     {
+        $attribute = new Attribute();
+        $attribute->name=$request->attribute;
+        $attribute->status=$request->status;
+       if( $attribute->save()){
+           toastr()->success('Attribute created successfully!');
+          return back();
+       }else{
+           toastr()->error('Error occurred wile saving, try again');
+           return back();
+       }
+
         //
     }
 

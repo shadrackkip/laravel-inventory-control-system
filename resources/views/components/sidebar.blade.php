@@ -49,16 +49,17 @@
             <a href="#" class="nav-link has-dropdown"><i data-feather="bookmark"></i><span>Attributes</span></a>
             <ul class="dropdown-menu">
                 <li><a class="nav-link" href="/admin/attributes/add">Add attributes</a></li>
+                <li><a class="nav-link" href="/admin/attributes">View attributes</a></li>
             </ul>
         </li>
-        <li class="dropdown @if(request()->path()=='admin/categories') active @endif">
+        <li class="dropdown @if(request()->path()=='admin/categories' || request()->path()=='admin/categories/add') active @endif">
             <a href="#" class="nav-link has-dropdown"><i data-feather="list"></i><span>Categories</span></a>
             <ul class="dropdown-menu">
                 <li><a class="nav-link" href="/admin/categories/add">Add</a></li>
                 <li><a class="nav-link" href="/admin/categories">View All</a></li>
             </ul>
         </li>
-        <li class="dropdown @if(request()->path()=='admin/brands') active @endif">
+        <li class="dropdown @if(request()->path()=='admin/brands' || request()->path()=='admin/brands/add') active @endif">
             <a href="#" class="nav-link has-dropdown"><i data-feather="crosshair"></i><span>Brands</span></a>
             <ul class="dropdown-menu">
                 <li><a class="nav-link" href="/admin/brands/add">Add</a></li>

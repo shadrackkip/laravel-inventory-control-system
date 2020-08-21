@@ -25,7 +25,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view('pages.categories.index');
+        return view('pages.categories.create');
         //
     }
 
@@ -37,6 +37,18 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
+        $category = new Category();
+        $category->name=$request->category;
+        $category->save();
+        if($request->parent && $request->parent !== 'none') {
+            //  Here we define the parent for new created category
+            $node = Category::find($request->parent);
+
+            $node->appendNode($category);
+        }
+        toastr()->success('Category created successfully!');
+        return back();
+
         //
     }
 

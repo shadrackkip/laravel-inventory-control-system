@@ -2,24 +2,450 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9d22e57-1f57-448e-8672-0a824244f5b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/fashion_store_admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fashion_store_admin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/user.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/user.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/userbig.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/userbig.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AttributeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AttributeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SupplierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SupplierController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/Changes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/LICENSE.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/basic_phpgrid.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/callbackstr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/conf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_flat_55_999999_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_flat_75_aaaaaa_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_glass_45_0078ae_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_glass_50_6eac2c_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_glass_55_f1ef6a_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_glass_55_f8da4e_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_glass_75_2191c0_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_glass_75_79c9ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_gloss-wave_45_e14f1c_500x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_gloss-wave_50_6eac2c_500x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_gloss-wave_75_2191c0_500x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_highlight-hard_75_2191c0_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_highlight-soft_45_0078ae_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_highlight-soft_50_035296_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_highlight-soft_75_2191c0_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-bg_inset-hard_75_2191c0_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-icons_0078ae_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-icons_056b93_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-icons_d8e7f3_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-icons_e0fdff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-icons_e7d574_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-icons_f5e175_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-icons_f7a50d_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/images/ui-icons_fcd113_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/jquery-ui-1.7.3.custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/start/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/css/ui.jqgrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/data.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleDB/mysql_db.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/airplane.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/checked.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/classic_car.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/motorcycle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/photos/airplane.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/photos/classic_car.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/photos/motorcycle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/photos/ship.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/photos/train.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/photos/truck.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/photos/vintage_car.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/ship.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/train.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/truck.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/unchecked.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/SampleImages/vintage_car.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/advanced_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/auto_fit_to_screen.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/basic_phpgrid.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/change_column_names.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/column_align.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/column_freeze.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/column_property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/column_text_edit_dimension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/column_width.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/custom_edit_conditon.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/custom_validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/data_filter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/data_format.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/display_hyperlink.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/dynamic_hyperlink.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/edit_form_layout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/employee.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/enable_edit_datagrid.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/filter_grid_on_pageload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/foreign_language_characters.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/grid_caption.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/grid_export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/grid_pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/hide_columns.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/horizontal_scroll.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/html_edit_control.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/hyperlink_click_event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/image_display.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/inline_edit_action_column.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/integrated_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/locale_setting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/main_test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/multiple_datagrids.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/multiple_grids_single_dbtable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/phpgrid_phpchart_integration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/readonly_fields.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/required_fields.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/resize_by_mouse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/select_multiple_rows.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/set_custom_event_handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/set_dimension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/vertical_scroll.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/examples/virtual_column.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/Changes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/afu/ajaxfileupload.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/afu/ajaxfileupload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/afu/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/grid.import.fix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-bg1251.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-cat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-dk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-hr1250.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-mne.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-sp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-sr-latin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/i18n/grid.locale-ua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/install.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/jquery-1.4.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/jquery-1.5.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/jquery-1.7.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/jquery-1.9.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/jquery-migrate-1.1.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/jquery-ui-1.10.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/jquery-ui-1.7.3.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/jquery-ui-1.8.10.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/jquery-ui-1.8.21.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/jquery-ui-timepicker-addon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/jquery.jqGrid.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/jquery.jqGrid.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/release.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2-spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2.jquery.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_en.js.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_pt-PT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_ua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2_locale_zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/js/select2/select2x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/masterdetail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/phpGrid.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/plugins/grid.addons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/plugins/grid.postext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/plugins/grid.setcolumns.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/plugins/jquery.contextmenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/plugins/jquery.searchFilter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/plugins/jquery.tablednd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/plugins/searchFilter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/plugins/ui.multiselect.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/plugins/ui.multiselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-active-record.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-active-recordx.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-csvlib.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-datadict.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-error.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-errorhandler.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-errorpear.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-exceptions.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-iterator.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-lib.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-memcache.lib.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-pager.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-pear.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-perf.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-php4.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-time.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-xmlschema.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb-xmlschema03.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/adodb.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/contrib/toxmlrpc.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/cute_icons_for_site/adodb.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/cute_icons_for_site/adodb2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/datadict/datadict-access.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/datadict/datadict-db2.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/datadict/datadict-firebird.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/datadict/datadict-generic.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/datadict/datadict-ibase.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/datadict/datadict-informix.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/datadict/datadict-mssql.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/datadict/datadict-mssqlnative.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/datadict/datadict-mysql.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/datadict/datadict-oci8.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/datadict/datadict-postgres.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/datadict/datadict-sapdb.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/datadict/datadict-sqlite.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/datadict/datadict-sybase.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-access.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-ado.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-ado5.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-ado_access.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-ado_mssql.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-ads.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-borland_ibase.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-csv.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-db2.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-db2oci.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-db2ora.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-fbsql.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-firebird.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-ibase.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-informix.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-informix72.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-ldap.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-mssql.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-mssql_n.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-mssqlnative.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-mssqlpo.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-mysql.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-mysqli.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-mysqlpo.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-mysqlt.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-netezza.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-oci8.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-oci805.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-oci8po.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-oci8quercus.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-odbc.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-odbc_db2.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-odbc_mssql.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-odbc_oracle.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-odbtp.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-odbtp_unicode.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-oracle.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-pdo.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-pdo_mssql.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-pdo_mysql.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-pdo_oci.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-pdo_pgsql.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-pdo_sqlite.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-pdo_sqlsrv.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-postgres.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-postgres64.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-postgres7.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-postgres8.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-postgres9.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-proxy.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-sapdb.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-sqlanywhere.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-sqlite.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-sqlite3.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-sqlitepo.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-sybase.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-sybase_ase.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-text.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/drivers/adodb-vfp.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-ar.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-bg.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-ca.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-cn.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-cz.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-da.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-de.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-en.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-eo.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-es.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-fa.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-fr.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-hu.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-it.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-nl.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-pl.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-pt-br.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-ro.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-ru.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-sv.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-th.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/lang/adodb-uk.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/pear/Auth/Container/ADOdb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/pear/auth_adodb_example.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/pear/readme.Auth.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/perf/perf-db2.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/perf/perf-informix.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/perf/perf-mssql.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/perf/perf-mssqlnative.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/perf/perf-mysql.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/perf/perf-oci8.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/perf/perf-postgres.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/pivottable.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/replicate/adodb-replicate.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/replicate/replicate-steps.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/replicate/test-tnb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/rsfilter.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/scripts/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/scripts/TARADO5.BAT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/scripts/buildrelease.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/scripts/updateversion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/scripts/uploadrelease.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-compress-bzip2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-compress-gzip.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-cryptsession.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-cryptsession2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-encrypt-mcrypt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-encrypt-md5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-encrypt-secret.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-encrypt-sha1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-sess.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-session-clob.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-session-clob2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-session2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-sessions.mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-sessions.oracle.clob.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/adodb-sessions.oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/crypt.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/old/adodb-cryptsession.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/old/adodb-session-clob.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/old/adodb-session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/old/crypt.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/session_schema.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/session/session_schema2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/benchmark.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/pdo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test-active-record.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test-active-recs2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test-active-relations.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test-active-relationsx.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test-datadict.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test-perf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test-pgblob.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test-php5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test-xmlschema.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/test_rs_array.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/testcache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/testdatabases.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/testgenid.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/testmssql.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/testoci8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/testoci8cursor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/testpaging.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/testpear.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/testsessions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/time.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/tmssql.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/xmlschema-mssql.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tests/xmlschema.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/toexport.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/tohtml.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/xmlschema.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/xmlschema03.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/xsl/convert-0.1-0.2.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/xsl/convert-0.1-0.3.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/xsl/convert-0.2-0.1.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/xsl/convert-0.2-0.3.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/xsl/remove-0.2.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/adodb5/xsl/remove-0.3.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/classes/cls_control.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/classes/cls_dataarray.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/classes/cls_datagrid.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/classes/cls_db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/server/classes/cls_util.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/php_grid/subgrid.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/attributes/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/attributes/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/attributes/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/attributes/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/brands/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/brands/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/brands/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/brands/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/categories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/categories/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/suppliers/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/suppliers/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/suppliers/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/suppliers/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +618,7 @@
       <updated>1597811645854</updated>
       <workItem from="1597811647003" duration="4478000" />
       <workItem from="1597898635862" duration="27959000" />
-      <workItem from="1597985119134" duration="270000" />
+      <workItem from="1597985119134" duration="10433000" />
     </task>
     <servers />
   </component>
@@ -200,10 +626,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597920463689">
+    <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597994867128">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1366.738@0.30.1366.738" timestamp="1597920463689" />
+    <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1366.738@0.30.1366.738" timestamp="1597994867128" />
     <state x="517" y="318" key="NewPhpFileDialog" timestamp="1597925968160">
       <screen x="0" y="30" width="1366" height="738" />
     </state>

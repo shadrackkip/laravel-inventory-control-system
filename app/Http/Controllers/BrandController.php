@@ -4,9 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Brand;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class BrandController extends Controller
 {
+
+    private $brand_logos;
+
+    public function __construct()
+    {
+        $this->brand_logos=public_path('/brands');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -32,12 +41,26 @@ class BrandController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
+        $brand=new Brand();
+        $brand->name=$request->brand;
+
+        if($request->hasFile('brand-logo')){
+            $oname=basename($request->file('brand-logo')->getClientOriginalName());
+            $new_name = time().'_'.$oname;
+            $img=Image::make($request->file('brand-logo'))
+                ->fit(200, 200, function ($constraints) {
+                    //  $constraints->aspectRatio();
+                    $constraints->upsize();
+                });
+            $img->save($this->brand_logos . '/' . $new_name);
+            $brand->logo=$new_name;
+        }
+        $brand->save();
+        toastr()->success('Brand saved successfully');
+        return back();
     }
 
     /**
