@@ -41,8 +41,8 @@
         <li class="dropdown @if(request()->path()=='admin/inventory' || request()->path()=='admin/inventory/add' || request()->path()=='admin/inventory/view') active @endif">
             <a href="#" class="nav-link has-dropdown"><i data-feather="grid"></i><span>Inventory</span></a>
             <ul class="dropdown-menu">
-                <li><a class="nav-link" href="/admin/inventory/add">Add</a></li>
-                <li><a class="nav-link" href="/admin/inventory">View Products</a></li>
+                <li><a class="nav-link" href="/admin/inventory">Products</a></li>
+                <li><a class="nav-link" href="/admin/inventory">Materials</a></li>
             </ul>
         </li>
         <li class="dropdown @if(request()->path()=='admin/attributes' || request()->path()=='admin/attributes/view'|| request()->path()=='admin/attributes/add') active @endif">

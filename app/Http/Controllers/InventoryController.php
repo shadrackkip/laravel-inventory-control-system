@@ -26,7 +26,7 @@ class InventoryController extends Controller
     public function create()
     {
         //
-        return view('pages.inventory.create');
+        return view('pages.inventory.products');
     }
 
     /**

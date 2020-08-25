@@ -55,7 +55,7 @@ Route::middleware('auth:admin')->group(function (){
         });
 
 
-        //Admin brands routes
+        //Admin categories routes
         Route::prefix('categories')->group(function () {
             Route::get('/','CategoryController@index');
             Route::get('/add','CategoryController@create');
@@ -84,7 +84,7 @@ Route::middleware('auth:admin')->group(function (){
             Route::post('/add','ReportController@store');
         });
 
-        //Admin reports routes
+        //Admin orders routes
         Route::prefix('orders')->group(function () {
             Route::get('/','OrderController@index');
 
