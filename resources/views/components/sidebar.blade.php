@@ -42,7 +42,7 @@
             <a href="#" class="nav-link has-dropdown"><i data-feather="grid"></i><span>Inventory</span></a>
             <ul class="dropdown-menu">
                 <li><a class="nav-link" href="/admin/inventory">Products</a></li>
-                <li><a class="nav-link" href="/admin/inventory">Materials</a></li>
+                <li><a class="nav-link" href="/admin/inventory/materials">Materials</a></li>
             </ul>
         </li>
         <li class="dropdown @if(request()->path()=='admin/attributes' || request()->path()=='admin/attributes/view'|| request()->path()=='admin/attributes/add') active @endif">
@@ -85,7 +85,21 @@
                 <li><a class="nav-link" href="/admin/reports">View All</a></li>
             </ul>
         </li>
-
+        <li class="dropdown @if(
+    request()->path()=='admin/settings/general' || request()->path()=='admin/settings/units_of_measure'||
+    request()->path()=='admin/settings/operations' || request()->path()=='admin/settings/locations'||
+    request()->path()=='admin/settings/data_import'
+     ) active @endif">
+            <a href="#" class="nav-link has-dropdown"><i data-feather="settings"></i><span>Settings</span></a>
+            <ul class="dropdown-menu">
+                <li><a class="nav-link" href="/admin/settings/general">General</a></li>
+                <li><a class="nav-link" href="/admin/settings/units_of_measure">Units of measure</a></li>
+                <li><a class="nav-link" href="/admin/settings/tax_rates">Tax rates</a></li>
+                <li><a class="nav-link" href="/admin/settings/operations">Operations</a></li>
+                <li><a class="nav-link" href="/admin/settings/locations">Locations</a></li>
+                <li><a class="nav-link" href="/admin/settings/data_import">Data import</a></li>
+            </ul>
+        </li>
 
 
 {{--        <li class="dropdown">--}}

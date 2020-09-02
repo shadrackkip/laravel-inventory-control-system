@@ -2,11 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9d22e57-1f57-448e-8672-0a824244f5b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/inventory/raw.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/inventory/add_materials.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/inventory/create_material.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/inventory/create_product.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/inventory/details.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/settings/data_import.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/settings/general.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/settings/operations.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/settings/tax_rates.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/settings/units_of_measure.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InventoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InventoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/page/editable-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/page/editable-table.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/inventory/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/inventory/products.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/inventory/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/inventory/products.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/inventory/raw.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/inventory/raw.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,6 +154,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1gIookTGumzZl3aL2xlF0rbhkh7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -183,6 +202,11 @@
       <workItem from="1597985119134" duration="11846000" />
       <workItem from="1598019119201" duration="1924000" />
       <workItem from="1598090307605" duration="156000" />
+      <workItem from="1598330635478" duration="66676000" />
+      <workItem from="1598501652554" duration="7772000" />
+      <workItem from="1598523124471" duration="616000" />
+      <workItem from="1598981345750" duration="774000" />
+      <workItem from="1599030342895" duration="644000" />
     </task>
     <servers />
   </component>
@@ -190,26 +214,26 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597994867128">
+    <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598506331798">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1366.738@0.30.1366.738" timestamp="1597994867128" />
+    <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1366.738@0.30.1366.738" timestamp="1598506331798" />
     <state x="463" y="154" key="FileChooserDialogImpl" timestamp="1598090488735">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="463" y="154" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1598090488735" />
-    <state x="517" y="318" key="NewPhpFileDialog" timestamp="1598019782740">
+    <state x="517" y="443" key="NewPhpFileDialog" timestamp="1598505147968">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="517" y="318" key="NewPhpFileDialog/0.30.1366.738@0.30.1366.738" timestamp="1598019782740" />
+    <state x="517" y="443" key="NewPhpFileDialog/0.30.1366.738@0.30.1366.738" timestamp="1598505147968" />
     <state x="184" y="44" key="SettingsEditor" timestamp="1597812701157">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="184" y="44" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1597812701157" />
-    <state x="339" y="182" key="run.anything.popup" timestamp="1597909917397">
+    <state x="339" y="182" key="run.anything.popup" timestamp="1598420322033">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="339" y="182" key="run.anything.popup/0.30.1366.738@0.30.1366.738" timestamp="1597909917397" />
+    <state x="339" y="182" key="run.anything.popup/0.30.1366.738@0.30.1366.738" timestamp="1598420322033" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1597814140453">
       <screen x="0" y="30" width="1366" height="738" />
     </state>

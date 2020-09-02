@@ -12,6 +12,8 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        //
+        //'
+        '/admin/variations/add/*',
+        '/admin/inventory/materials/attributes/create'
     ];
 }

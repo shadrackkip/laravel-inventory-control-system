@@ -15,6 +15,9 @@ Route::middleware('auth:admin')->group(function (){
         });
         Route::get('/profile','ProfileController@index')->name('profile');
 
+        Route::get('/getVariations/{id}','AttributeMaterialController@getAtts');
+        Route::post('/create_ingredients/{id}','AttributeMaterialController@create_ingredients');
+
 
         //Admin user routes
         Route::prefix('users')->group(function () {
@@ -46,6 +49,11 @@ Route::middleware('auth:admin')->group(function (){
             Route::get('/add','AttributeController@create');
             Route::post('/add','AttributeController@store');
         });
+        Route::prefix('variations')->group(function () {
+            Route::get('/','VariationController@index');
+            Route::get('/add','VariationController@create');
+            Route::post('/add/{stock_id}','VariationController@store');
+        });
 
         //Admin brands routes
         Route::prefix('brands')->group(function () {
@@ -65,6 +73,16 @@ Route::middleware('auth:admin')->group(function (){
         //Admin inventory routes
         Route::prefix('inventory')->group(function () {
             Route::get('/','InventoryController@index');
+            Route::get('/create_product','InventoryController@create_product');
+            Route::get('/product/edit/{prod_id}','InventoryController@view_product');
+            Route::get('/product/view/{prod_id}','InventoryController@show');
+            Route::get('/materials','MaterialController@index');
+            Route::get('/materials/create','MaterialController@create');
+            Route::post('/materials/create/{track_id}','MaterialController@createMaterial');
+            Route::post('/materials/attributes/create','MaterialController@createAttributes');
+            Route::get('/materials/attributes/getAttributes/{track_id}','MaterialController@getAttributes');
+            Route::get('/create_product/{stock_id}','ProductController@create_product');
+            Route::post('/create_product/{stock_id}','ProductController@add_product');
             Route::get('/add','InventoryController@create');
             Route::post('/add','InventoryController@store');
         });
@@ -98,6 +116,18 @@ Route::middleware('auth:admin')->group(function (){
             Route::get('/add','ReportController@create');
             Route::post('/add','ReportController@store');
         });
+
+        //Admin settings routes
+        Route::prefix('settings')->group(function () {
+            Route::get('/general','SettingController@general');
+            Route::get('/units_of_measure','SettingController@units_of_measure');
+            Route::post('/units_of_measure','SettingController@store_units_of_measure');
+            Route::get('/tax_rates','SettingController@tax_rates');
+            Route::get('/operations','SettingController@operations');
+            Route::get('/data_import','SettingController@data_import');
+        });
+
+
     });
 });
 
